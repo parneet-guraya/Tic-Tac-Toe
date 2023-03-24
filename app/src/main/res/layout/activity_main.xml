@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/current_player_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/row0_col0"
+        android:layout_margin="32dp"
+        android:textAlignment="center"
+        style="@style/TextAppearance.MaterialComponents.Headline3" />
+
+
+    <ImageView
+        android:id="@+id/row0_col0"
+        tools:src="@drawable/x_symbol"
+        app:layout_constraintBottom_toTopOf="@+id/row1_col0"
+        app:layout_constraintEnd_toStartOf="@+id/row0_col1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:ignore="ContentDescription"
+        style="@style/tile_img_style" />
+
+    <ImageView
+        android:id="@+id/row0_col1"
+        style="@style/tile_img_style"
+        app:layout_constraintBottom_toTopOf="@+id/row1_col1"
+        app:layout_constraintEnd_toStartOf="@+id/row0_col2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/row0_col0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/row0_col2"
+        style="@style/tile_img_style"
+        app:layout_constraintBottom_toTopOf="@+id/row1_col2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/row0_col1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:ignore="ContentDescription" />
+
+    <!--    row 0 completed-->
+
+    <ImageView
+        android:id="@+id/row1_col0"
+        style="@style/tile_img_style"
+        app:layout_constraintBottom_toTopOf="@+id/row2_col0"
+        app:layout_constraintEnd_toStartOf="@+id/row1_col1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row0_col0"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/row1_col1"
+        style="@style/tile_img_style"
+        app:layout_constraintBottom_toTopOf="@+id/row2_col1"
+        app:layout_constraintEnd_toStartOf="@+id/row1_col2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/row1_col0"
+        app:layout_constraintTop_toBottomOf="@+id/row0_col1"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/row1_col2"
+        style="@style/tile_img_style"
+        app:layout_constraintBottom_toTopOf="@+id/row2_col2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/row1_col1"
+        app:layout_constraintTop_toBottomOf="@+id/row0_col2"
+        tools:ignore="ContentDescription" />
+
+    <!--    row 1 completed-->
+
+
+    <ImageView
+        android:id="@+id/row2_col0"
+        style="@style/tile_img_style"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/row2_col1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/row1_col0"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/row2_col1"
+        style="@style/tile_img_style"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/row2_col2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/row2_col0"
+        app:layout_constraintTop_toBottomOf="@+id/row1_col1"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/row2_col2"
+        style="@style/tile_img_style"
+        tools:src="@drawable/o_symbol"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/row2_col1"
+        app:layout_constraintTop_toBottomOf="@+id/row1_col2"
+        tools:ignore="ContentDescription" />
+
+    <Button
+        android:id="@+id/restart_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/row2_col1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        android:text="@string/button_restart_text"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

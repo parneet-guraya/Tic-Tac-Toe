@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="tile_img_style">
+        <item name="android:layout_width">@dimen/tile_dimens</item>
+        <item name="android:layout_height">@dimen/tile_dimens</item>
+        <item name="android:padding">8dp</item>
+    </style>
+</resources>

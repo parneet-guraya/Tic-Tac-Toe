@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Tic Tact Toe</string>
+    <string name="button_restart_text">Restart</string>
+</resources>
